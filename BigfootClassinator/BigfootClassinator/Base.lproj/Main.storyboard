@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bigfoot_Classinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigfootFace" translatesAutoresizingMaskIntoConstraints="NO" id="ieP-NT-zSI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ieP-NT-zSI" secondAttribute="height" multiplier="375:667" id="BT7-Y7-cMe"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSe-pN-hW9" userLabel="DarkeningView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bigfoot Classinator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ7-Xy-n99" userLabel="MainTitle">
+                                <rect key="frame" x="20" y="30" width="335" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you seen Bigfoot? Do you know what type of sighting it was? Just tell us about it and we'll classinate it for you!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCb-q6-jbl" userLabel="MainText">
+                                <rect key="frame" x="20" y="67" width="180" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="4Z7-Pu-y4a"/>
+                                    <constraint firstAttribute="height" constant="90" id="JBK-QP-MIZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classses of Bigfoot Sightings" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhU-ck-h1j" userLabel="ClassesTitle">
+                                <rect key="frame" x="20" y="503.5" width="335" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWR-wE-34Q" userLabel="ClassesText">
+                                <rect key="frame" x="20" y="533" width="335" height="54"/>
+                                <string key="text">Class A: I saw Bigfoot.
+Class B: I saw evidence of Bigfoot.
+Class C: Somebody told me they saw Bigfoot</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us about your experience." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ts-5c-wg7" userLabel="SightingLabel">
+                                <rect key="frame" x="20" y="172" width="335" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hA9-qs-690" userLabel="SightingTextView">
+                                <rect key="frame" x="20" y="200" width="335" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="0.24895753450920247" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="7sc-cd-A2y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="V8f-94-9Sn"/>
+                                </connections>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AiByDataRobot" translatesAutoresizingMaskIntoConstraints="NO" id="APe-vR-ElD" userLabel="DataRobotLogo">
+                                <rect key="frame" x="37.5" y="597" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1sA-Jm-pVq"/>
+                                    <constraint firstAttribute="height" constant="50" id="P7P-3X-gMA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZb-tC-G0B" userLabel="ClassinateButton">
+                                <rect key="frame" x="20" y="340" width="335" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="QZq-3F-yxL"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Classinate"/>
+                                <connections>
+                                    <action selector="classinateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvl-iB-sTW"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ywV-nk-2Sa" userLabel="ActivityIndicator">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FSe-pN-hW9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1dg-lc-8Ig"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bWR-wE-34Q" secondAttribute="trailing" constant="20" id="7ii-ze-Gei"/>
+                            <constraint firstItem="cZb-tC-G0B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="92z-96-pzz"/>
+                            <constraint firstItem="mCb-q6-jbl" firstAttribute="top" secondItem="EJ7-Xy-n99" secondAttribute="bottom" constant="8" symbolic="YES" id="B7u-dY-SkG"/>
+                            <constraint firstItem="APe-vR-ElD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H8d-ry-QWa"/>
+                            <constraint firstItem="EJ7-Xy-n99" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Hzl-mQ-yRz"/>
+                            <constraint firstItem="3Ts-5c-wg7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Iig-27-vfd"/>
+                            <constraint firstItem="ieP-NT-zSI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KXP-oa-cdL"/>
+                            <constraint firstAttribute="bottom" secondItem="FSe-pN-hW9" secondAttribute="bottom" id="Ss2-mt-Vyl"/>
+                            <constraint firstItem="cZb-tC-G0B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TRC-nW-u6M"/>
+                            <constraint firstItem="hA9-qs-690" firstAttribute="top" secondItem="3Ts-5c-wg7" secondAttribute="bottom" constant="10" id="Ygy-H3-WzX"/>
+                            <constraint firstItem="ywV-nk-2Sa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YjP-Dn-CtY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FSe-pN-hW9" secondAttribute="trailing" id="bUC-nc-WaI"/>
+                            <constraint firstItem="mCb-q6-jbl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cxM-p3-3JK"/>
+                            <constraint firstAttribute="trailing" secondItem="FSe-pN-hW9" secondAttribute="trailing" id="gOu-dP-wyf"/>
+                            <constraint firstItem="bWR-wE-34Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gPR-Xa-mlz"/>
+                            <constraint firstItem="ieP-NT-zSI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j5Q-7T-NUR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Ts-5c-wg7" secondAttribute="trailing" constant="20" id="jJb-Ic-eAJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hA9-qs-690" secondAttribute="trailing" constant="20" id="kI8-5l-1I4"/>
+                            <constraint firstItem="ieP-NT-zSI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lMq-p7-8YC"/>
+                            <constraint firstItem="bWR-wE-34Q" firstAttribute="top" secondItem="rhU-ck-h1j" secondAttribute="bottom" constant="8" symbolic="YES" id="o9k-wz-lzp"/>
+                            <constraint firstItem="3Ts-5c-wg7" firstAttribute="top" secondItem="mCb-q6-jbl" secondAttribute="bottom" constant="15" id="okZ-nt-tZP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rhU-ck-h1j" secondAttribute="trailing" constant="20" id="pRH-r9-g1W"/>
+                            <constraint firstItem="FSe-pN-hW9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s9W-5o-IcP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cZb-tC-G0B" secondAttribute="trailing" constant="20" id="sFI-yt-L5f"/>
+                            <constraint firstItem="rhU-ck-h1j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sis-ml-Fvc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EJ7-Xy-n99" secondAttribute="trailing" constant="20" id="ss4-Ly-XAq"/>
+                            <constraint firstItem="cZb-tC-G0B" firstAttribute="top" secondItem="hA9-qs-690" secondAttribute="bottom" constant="20" id="suy-NI-SeZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="APe-vR-ElD" secondAttribute="bottom" constant="20" id="tcc-Le-VDH"/>
+                            <constraint firstItem="EJ7-Xy-n99" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u0y-Ws-AWp"/>
+                            <constraint firstItem="ywV-nk-2Sa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wE0-Th-xGe"/>
+                            <constraint firstItem="hA9-qs-690" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x2k-0J-hKv"/>
+                            <constraint firstItem="APe-vR-ElD" firstAttribute="top" secondItem="bWR-wE-34Q" secondAttribute="bottom" constant="10" id="zV2-bC-rPa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ywV-nk-2Sa" id="Eol-8b-0sE"/>
+                        <outlet property="classinateButton" destination="cZb-tC-G0B" id="EOL-TP-1Z4"/>
+                        <outlet property="sightingTextView" destination="hA9-qs-690" id="1u0-d2-grJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AiByDataRobot" width="568.42108154296875" height="118.89473724365234"/>
+        <image name="BigfootFace" width="4421" height="2947"/>
+    </resources>
+</document>
