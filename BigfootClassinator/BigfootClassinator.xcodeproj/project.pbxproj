@@ -387,7 +387,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nexosis.BigfootClassinator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hardboiledgeek.BigfootClassinator;
 				PRODUCT_NAME = "Bigfoot Classinator";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -406,7 +406,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nexosis.BigfootClassinator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hardboiledgeek.BigfootClassinator;
 				PRODUCT_NAME = "Bigfoot Classinator";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
