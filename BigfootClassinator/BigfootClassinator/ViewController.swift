@@ -5,13 +5,18 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var sightingTextView: UITextView!
     @IBOutlet weak var classinateButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var dataRobotLogoImageView: UIImageView!
 
     private var classinator = Classinator.shared
     private var messages = Messages.shared
 
+    private let tapGestureRecognizer = UITapGestureRecognizer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNeedsStatusBarAppearanceUpdate()
+        tapGestureRecognizer.addTarget(self, action: #selector(logoTapped(tapGestureRecognizer:)))
+        dataRobotLogoImageView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -43,6 +48,12 @@ class ViewController: UIViewController, UITextViewDelegate {
             .catch { error in
                 self.showError(error: error)
             }
+    }
+
+    @objc func logoTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        if let url = URL(string: "https://www.datarobot.com/") {
+            UIApplication.shared.open(url)
+        }
     }
 
     private func clearInput() {

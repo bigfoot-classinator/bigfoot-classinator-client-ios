@@ -81,7 +81,7 @@ Class C: Somebody told me they saw Bigfoot</string>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="V8f-94-9Sn"/>
                                 </connections>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AiByDataRobot" translatesAutoresizingMaskIntoConstraints="NO" id="APe-vR-ElD" userLabel="DataRobotLogo">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AiByDataRobot" translatesAutoresizingMaskIntoConstraints="NO" id="APe-vR-ElD" userLabel="DataRobotLogo">
                                 <rect key="frame" x="37.5" y="597" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="1sA-Jm-pVq"/>
@@ -145,6 +145,7 @@ Class C: Somebody told me they saw Bigfoot</string>
                     <connections>
                         <outlet property="activityIndicator" destination="ywV-nk-2Sa" id="Eol-8b-0sE"/>
                         <outlet property="classinateButton" destination="cZb-tC-G0B" id="EOL-TP-1Z4"/>
+                        <outlet property="dataRobotLogoImageView" destination="APe-vR-ElD" id="U2T-Jy-74a"/>
                         <outlet property="sightingTextView" destination="hA9-qs-690" id="1u0-d2-grJ"/>
                     </connections>
                 </viewController>
