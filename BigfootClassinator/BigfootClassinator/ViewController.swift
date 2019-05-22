@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITextViewDelegate {
 
         startActivityIndication()
 
-        _ = classinator.classinate(sighting: sighting)
+        _ = classinator.classinate(latitude: 0.0, longitude: 0.0, sighting: sighting)
             .done { classination in
                 self.clearInput()
                 self.showResults(classination: classination)
