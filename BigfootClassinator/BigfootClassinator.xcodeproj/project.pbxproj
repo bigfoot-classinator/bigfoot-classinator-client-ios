@@ -11,6 +11,7 @@
 		E436CE5C216537F900A91B4C /* Classinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436CE5B216537F900A91B4C /* Classinator.swift */; };
 		E477E5792167AC6600C271A1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477E5782167AC6600C271A1 /* Settings.swift */; };
 		E477E57B2167AD3200C271A1 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = E477E57A2167AD3200C271A1 /* Settings.plist */; };
+		E4B8E1222295D3760064598F /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E1212295D3760064598F /* Locator.swift */; };
 		E4E2A70B216664F000AF0874 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E2A70A216664F000AF0874 /* Adapter.swift */; };
 		E4E2A71421667CFE00AF0874 /* Messages.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4E2A71321667CFE00AF0874 /* Messages.strings */; };
 		E4EAE5ED2164088A002EEAF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EAE5EC2164088A002EEAF2 /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 		E436CE5B216537F900A91B4C /* Classinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classinator.swift; sourceTree = "<group>"; };
 		E477E5782167AC6600C271A1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E477E57A2167AD3200C271A1 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		E4B8E1212295D3760064598F /* Locator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locator.swift; sourceTree = "<group>"; };
 		E4E2A70A216664F000AF0874 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		E4E2A71321667CFE00AF0874 /* Messages.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Messages.strings; sourceTree = "<group>"; };
 		E4EAE5E92164088A002EEAF2 /* Bigfoot Classinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bigfoot Classinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				E4EAE5EC2164088A002EEAF2 /* AppDelegate.swift */,
 				E4EAE5EE2164088A002EEAF2 /* ViewController.swift */,
 				E436CE5B216537F900A91B4C /* Classinator.swift */,
+				E4B8E1212295D3760064598F /* Locator.swift */,
 				E4E2A70A216664F000AF0874 /* Adapter.swift */,
 				E477E5782167AC6600C271A1 /* Settings.swift */,
 				E4EAE5F82164088C002EEAF2 /* Info.plist */,
@@ -223,6 +226,7 @@
 			files = (
 				E4E2A70B216664F000AF0874 /* Adapter.swift in Sources */,
 				E436CE5C216537F900A91B4C /* Classinator.swift in Sources */,
+				E4B8E1222295D3760064598F /* Locator.swift in Sources */,
 				E4EAE5EF2164088A002EEAF2 /* ViewController.swift in Sources */,
 				E4EAE5ED2164088A002EEAF2 /* AppDelegate.swift in Sources */,
 				E477E5792167AC6600C271A1 /* Settings.swift in Sources */,

@@ -13,7 +13,7 @@ class Classinator {
 
     private var adapter = Adapter.shared
 
-    func classinate(latitude: Float, longitude: Float, sighting: String) -> Promise<Classination> {
+    func classinate(latitude: Double, longitude: Double, sighting: String) -> Promise<Classination> {
         return adapter.classinate(json: [ "latitude": latitude, "longitude": longitude, "sighting" : sighting ])
             .then { data -> Promise<Classination> in
                 let selected = self.extractSelected(data: data)

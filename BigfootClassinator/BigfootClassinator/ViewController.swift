@@ -8,6 +8,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var dataRobotLogoImageView: UIImageView!
 
     private var classinator = Classinator.shared
+    private var locator = Locator.shared
     private var messages = Messages.shared
 
     private let tapGestureRecognizer = UITapGestureRecognizer()
@@ -34,10 +35,12 @@ class ViewController: UIViewController, UITextViewDelegate {
 
     @IBAction func classinateButtonTapped(_ sender: Any) {
         let sighting: String = self.sightingTextView?.text ?? ""
+        let latitude: Double = locator.latitude
+        let longitude: Double = locator.longitude
 
         startActivityIndication()
 
-        _ = classinator.classinate(latitude: 0.0, longitude: 0.0, sighting: sighting)
+        _ = classinator.classinate(latitude: latitude, longitude: longitude, sighting: sighting)
             .done { classination in
                 self.clearInput()
                 self.showResults(classination: classination)
