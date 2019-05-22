@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -137,6 +137,7 @@
 				TargetAttributes = {
 					E4EAE5E82164088A002EEAF2 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -382,7 +383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hardboiledgeek.BigfootClassinator;
 				PRODUCT_NAME = "Bigfoot Classinator";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -401,7 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hardboiledgeek.BigfootClassinator;
 				PRODUCT_NAME = "Bigfoot Classinator";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
