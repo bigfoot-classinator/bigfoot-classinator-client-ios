@@ -14,34 +14,8 @@ class Locator: NSObject, CLLocationManagerDelegate {
     private var lastLocation: CLLocation?
 
     override init() {
-        
         super.init()
-
-        if !CLLocationManager.locationServicesEnabled() {
-            fatalError("Location services must be enabled to use the Bigfoot Classinator.")
-        }
-
-        let authorizationStatus = CLLocationManager.authorizationStatus()
-        if authorizationStatus != .authorizedWhenInUse && authorizationStatus != .authorizedAlways {
-            fatalError("Location services must be authorized to use the Bigfoot Classinator.")
-        }
-
-        // Configure and start the service.
-        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-        locationManager.distanceFilter = 50.0
-        locationManager.delegate = self
-
-        locationManager.startUpdatingLocation()
-    }
-
-    func locationManager(_ manager: CLLocationManager,  didUpdateLocations locations: [CLLocation]) {
-        lastLocation = locations.last!
-    }
-
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        if let error = error as? CLError, error.code == .denied {
-            manager.stopUpdatingLocation()
-        }
+        startWatchingLocation()
     }
 
     var latitude: Double {
@@ -50,6 +24,20 @@ class Locator: NSObject, CLLocationManagerDelegate {
 
     var longitude: Double {
         return lastLocation?.coordinate.longitude ?? 0.0
+    }
+
+    func locationManager(_ manager: CLLocationManager,  didUpdateLocations locations: [CLLocation]) {
+        lastLocation = locations.last!
+    }
+
+    private func startWatchingLocation() {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.requestWhenInUseAuthorization()
+
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+        }
     }
 
 }
