@@ -378,15 +378,17 @@
 			baseConfigurationReference = 36EA4B7F34007466561E9ADC /* Pods-BigfootClassinator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CV26BF4GC7;
+				DEVELOPMENT_TEAM = 7S2J4A498G;
 				INFOPLIST_FILE = BigfootClassinator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hardboiledgeek.BigfootClassinator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hardboiledgeek.BigfootClassinator2;
 				PRODUCT_NAME = "Bigfoot Classinator";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -397,15 +399,17 @@
 			baseConfigurationReference = 0B76674F7B78CA227AA971B2 /* Pods-BigfootClassinator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CV26BF4GC7;
+				DEVELOPMENT_TEAM = 7S2J4A498G;
 				INFOPLIST_FILE = BigfootClassinator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hardboiledgeek.BigfootClassinator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hardboiledgeek.BigfootClassinator2;
 				PRODUCT_NAME = "Bigfoot Classinator";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
